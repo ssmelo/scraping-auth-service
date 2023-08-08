@@ -2,18 +2,12 @@
 
 namespace auth_service.Application.DTOs.User.Login
 {
-    public class LoginRequestDTO
+    public record LoginRequestDTO
     {
         [Required]
-        public string Email { get; set; }
+        public string Email { get; init; }
 
         [Required]
-        public string Password { get; set; }
-
-        public LoginRequestDTO(string email, string password)
-        {
-            Email = email;
-            Password = password;
-        }
+        public string Password { get; init; }
     }
 }

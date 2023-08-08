@@ -8,11 +8,11 @@ namespace auth_service.Api
 {
     [ApiController]
     [Route("[controller]")]
-    public class UserController : ControllerBase
+    public class UsersController : ControllerBase
     {
         private readonly IIdentityService _identityService;
 
-        public UserController(IIdentityService identityService)
+        public UsersController(IIdentityService identityService)
         {
             _identityService = identityService;
         }

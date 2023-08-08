@@ -27,7 +27,7 @@ namespace auth_service.Application.Middlewares
         {
             context.Response.ContentType = "application/json";
 
-            var message = "";
+            string message;
             if(exception is DefaultException)
             {
                 var ex = (DefaultException)exception;
